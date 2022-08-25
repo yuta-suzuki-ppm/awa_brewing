@@ -13,6 +13,10 @@ body {
   margin-bottom: 100px;
 }
 
+.my_nav_bg {
+  background-color: #000000;
+}
+
 #hamburger_btn_check:checked~.hamburger_btn .btn_close {
   display: block;
 }
@@ -176,4 +180,44 @@ footer a {
 .item_img {
   aspect-ratio: 1.33;
   object-fit: cover;
+}
+
+/* 全体 テキスト フェードイン */
+
+.fade_a1,
+.fade_b1,
+.fade_c1,
+.fade_d1 {
+  opacity: 0;
+  transform: translate(0, 40px);
+  transition: all 2s cubic-bezier(0.155, 0.910, 0.695, 0.950);
+}
+
+.fade_a2,
+.fade_b2,
+.fade_c2,
+.fade_d2 {
+  opacity: 0;
+  transform: translate(0, 40px);
+  transition: all 2s cubic-bezier(0.155, 0.910, 0.695, 0.950) 0.5s;
+}
+
+.fade_a3,
+.fade_b3,
+.fade_c3,
+.fade_d3 {
+  opacity: 0;
+  transform: translate(0, 40px);
+  transition: all 2s cubic-bezier(0.155, 0.910, 0.695, 0.950) 1s;
+}
+
+.fade_d4 {
+  opacity: 0;
+  transform: translate(0, 40px);
+  transition: all 2s cubic-bezier(0.155, 0.910, 0.695, 0.950) 1.5s;
+}
+
+.show {
+  opacity: 1;
+  transform: translate(0, 0);
 }

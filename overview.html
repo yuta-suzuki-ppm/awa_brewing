@@ -17,14 +17,11 @@
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css"
-    integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
 
   <link href="img/apple-touch-icon.png" rel="icon" type="image/x-icon" />
   <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
 
   <link rel="stylesheet" href="css/top.css">
-
   <link rel="stylesheet" type="text/css" href="css/slick.css">
   <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
 
@@ -32,13 +29,22 @@
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
   </script>
 
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+
+  <!-- 最後 -->
+  <script src="js/animation.js"></script>
+
 </head>
 
 <body>
 
   <!--  ナビゲーションバー開始 -->
 
-  <nav class="navbar navbar-expand-lg bg-dark">
+  <nav class="navbar navbar-expand-lg my_nav_bg">
     <div class="container">
 
       <a class="navbar-brand pt-1 pb-0 ms-5" href="">
@@ -60,7 +66,7 @@
             <a class="nav-link my_nav_link my-2" href="store.html">WEB STOR</a>
           </li>
           <li class="nav-item px-2">
-            <a class="nav-link my_nav_link my-2" href="#awa-brewery">AWA
+            <a class="nav-link my_nav_link my-2" href="index.html#awa-brewery">AWA
               BREWERY</a>
           </li>
           <li class="nav-item px-2">
@@ -192,7 +198,7 @@
 
                 <div class="col-6">
                   <ul class="my_link">
-                    <li class="mb-4 position-relative"><a href="#" class="text-decoration-none">TOP</a></li>
+                    <li class="mb-4 position-relative"><a href="index.html" class="text-decoration-none">TOP</a></li>
                     <li class="mb-4 position-relative"><a href="store.html" class="text-decoration-none">WEB STORE</a>
                     </li>
                     <li class="mb-4 position-relative"><a href="overview.html" class="text-decoration-none">OUR
@@ -231,22 +237,7 @@
 
   </footer>
 
-  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   <script src="css/slick.min.js"></script>
-
-  <script>
-    $(function () {
-      $('.hamburger').click(function () {
-        $(this).toggleClass('active');
-
-        if ($(this).hasClass('active')) {
-          $('.globalMenuSp').addClass('active');
-        } else {
-          $('.globalMenuSp').removeClass('active');
-        }
-      });
-    });
-  </script>
 
   <script>
     $('.slider').slick({
